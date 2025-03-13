@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.social-links {
+    width: auto;
+    height: 42px;
+}
+
+.icon {
+    padding: 5px;    
+}
+
+.slide {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#slide1 {
+    background-image: url('./images/background1.jpg');
+    
+}
+.info, .about {
+    min-width: 300px;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+}
+.title {
+    padding: 25px;
+    font-size: 2em;
+    font-weight: 900;
+    color: #fff;
+}
+.text {
+    padding: 25px;
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #fff;
+}
+
+#slide2 {
+    background-image: url('./images/background.jpg');
+}
+
+#slide3 {
+    background-image: url('./images/background2.jpg');
+}
+
+#slide4 {
+    background-image: url('./images/background3.jpg');
+}
+
+#slide5 {
+    background-image: url('./images/background4.jpg');
+}
+
+/* Стили для формы заказа */
+.order-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
+    border-radius: 15px; /* Закруглённые углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
+}
+
+/* Стили для полей ввода */
+.order-form input, .order-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Закруглённые углы */
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Плавные переходы */
+}
+
+/* Стили для текстового поля */
+.order-form textarea {
+    resize: vertical; /* Разрешаем изменение высоты */
+    min-height: 100px;
+}
+
+/* Стили для кнопки отправки */
+.order-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #00bcd4; /* Голубой фон */
+    color: #fff; /* Белый текст */
+    border: none;
+    border-radius: 8px; /* Закруглённые углы */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Плавные переходы */
+}
+
+/* Стили при наведении на поля ввода */
+.order-form input:hover, .order-form textarea:hover {
+    border-color: #00bcd4; /* Голубая рамка */
+    box-shadow: 0 0 8px rgba(0, 188, 212, 0.3); /* Лёгкая тень */
+}
+
+/* Стили при фокусе на полях ввода */
+.order-form input:focus, .order-form textarea:focus {
+    border-color: #00bcd4; /* Голубая рамка */
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 188, 212, 0.5); /* Более яркая тень */
+}
+
+/* Стили при наведении на кнопку */
+.order-form button:hover {
+    background-color: #0097a7; /* Темно-голубой фон */
+    transform: scale(1.05); /* Увеличение кнопки */
+}
+
+/* Стили при нажатии на кнопку */
+.order-form button:active {
+    transform: scale(0.95); /* Уменьшение кнопки */
+}
+
+.contacts {
+    display: flex; justify-content: center; align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 15px;
+}
+
+.map {
+    width: 350px;
+    height: 350px;
+    padding-bottom: 25px;
+}
+
+.top-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-image: url(./images/up.png);    
+    text-decoration: none;
+    z-index: 100;
+    width: 50px; 
+    height: 50px; 
+    /* border-radius: 50%; */
+    /* background: #333;
+    color: #fff;
+    padding: 10px; */
+    /* border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid blue; */
+}
+
+.top-button:hover {
+    transform: scale(1.25);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    width: 300px;
+    height: 420px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff; /* Белый фон по умолчанию */
+    border: 1px solid #ddd; /* Граница для карточки */
+    border-radius: 10px; /* Закруглённые углы */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавный переход */
+    margin: 10px; /* Отступ между карточками */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.buy-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Плавный переход для кнопки */
+}
+
+/* Стили при наведении на карточку */
+.carousel-item:hover {
+    background-color: #00bcd4; /* Голубой фон */
+    color: #fff; /* Белый цвет текста */
+}
+
+/* Стили для кнопки при наведении на карточку */
+.carousel-item:hover .buy-button {
+    background-color: #fff; /* Белый фон кнопки */
+    color: #00bcd4; /* Голубой цвет текста кнопки */
+}
+
+/* Стили для кнопок слайдера */
+.slick-prev, .slick-next {
+    width: 50px; /* Ширина кнопки */
+    height: 50px; /* Высота кнопки */
+    background-color: #00bcd4; /* Голубой фон */
+    border-radius: 50%; /* Круглая форма */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Тень для кнопок */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Плавные переходы */
+    z-index: 10; /* Чтобы кнопки были поверх слайдов */
+}
+
+/* Стили для иконок внутри кнопок */
+.slick-prev:before, .slick-next:before {
+    font-family: 'Font Awesome 5 Free'; /* Используем Font Awesome для иконок */
+    font-weight: 900;
+    font-size: 24px; /* Размер иконки */
+    color: #fff; /* Белый цвет иконки */
+    opacity: 1; /* Убираем прозрачность */
+}
+
+/* Иконка для кнопки "Назад" */
+.slick-prev:before {
+    content: '\f104'; /* Иконка стрелки влево */
+}
+
+/* Иконка для кнопки "Вперёд" */
+.slick-next:before {
+    content: '\f105'; /* Иконка стрелки вправо */
+}
+
+/* Стили при наведении на кнопки */
+.slick-prev:hover, .slick-next:hover {
+    background-color: #0097a7; /* Темно-голубой фон при наведении */
+    
+}
+
+/* Позиционирование кнопки "Назад" */
+.slick-prev {
+    left: -60px; /* Отступ слева */
+}
+
+/* Позиционирование кнопки "Вперёд" */
+.slick-next {
+    right: -60px; /* Отступ справа */
+}
+
+/* Адаптация для маленьких экранов */
+@media (max-width: 1024px) {
+    .carousel-item {
+        flex: 0 0 calc(100% / 3);
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        flex: 0 0 calc(100% / 2);
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .slick-prev, .slick-next {
+        width: 40px; /* Уменьшаем размер кнопок */
+        height: 40px;
+    }
+
+    .slick-prev:before, .slick-next:before {
+        font-size: 20px; /* Уменьшаем размер иконок */
+    }
+
+    .slick-prev {
+        left: -10px; /* Уменьшаем отступ слева */
+    }
+
+    .slick-next {
+        right: -10px; /* Уменьшаем отступ справа */
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        font-size: 80%;
+    }
+    .carousel-item {
+        flex: 0 0 100%;
+    }
+
+    .carousel-item img {
+        width: 80%;
+        height: auto;
+        margin: 0% auto;
+    }
+
+    .slide {
+        padding: 10px;
+    }
+
+    .top-button {
+        right: 10px;
+        bottom: 10px;
+        padding: 8px;
+    }
+}

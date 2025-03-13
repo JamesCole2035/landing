@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- Подключение Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="burger-menu" id="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#slide1">Главная</a></li>
+                <li><a href="#slide2">О нас</a></li>
+                <li><a href="#slide3">Товары</a></li>
+                <li><a href="#slide4">Заказ</a></li>
+                <li><a href="#slide5">Контакты</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://vk.com/vishsad"><img class="icon" src="./images/vk.png" target="_blank"></a>
+                <a href="https://t.me/vishsad"><img class="icon" src="./images/telegram.png" target="_blank"></a>
+                <a href="https://wa.me"><img class="icon" src="./images/whatsapp.png" target="_blank"></a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="slide1" class="slide">
+        <div class="info">
+            <h1 class="title">Добро пожаловать в наш уютный магазин домашнего варенья "Вишнёвый сад"! <br />
+                В нашем интернет-магазине вы можете купить домашнее варенье, из самых различных ягод, фруктов и орехов. </h1>
+        </div>        
+        <a href="#slide1" class="top-button"></a>
+    </section>
+
+    <section id="slide2" class="slide">
+        <div class="about">
+            <h2 class="title">О нас</h2>
+            <p class="text">В нашем интернет-магазине вы можете купить домашнее варенье, из самых различных ягод, фруктов, орехов, а так же изделия из них. 
+            Вы можете заказать варенье в банке объёмом от 0.5 до 5 литров, которые вы можете приехать и забрать самостоятельно, так же мы доставим вам почтой или транспортной компанией!
+            У нас только натуральное варенье из ягод и сахара, без каких-либо добавок. Для приготовления мы не используем ни пектин, ни желеобразующие добавки. Только сахар и ягоды, без перекрутки. 
+            У нас все натуральное, поэтому варенье нужно съесть за зиму! Максимальный срок хранения полгода. 
+            В разделе "О готовке" представлена вся информация о том где мы находимся и как делаем варенье. а так же полный состав и описание процесса готовки.
+        </p>
+        </div>        
+        <a href="#slide1" class="top-button"></a>
+    </section>
+
+    <section id="slide3" class="slide">
+        <h2 class="title">Наши товары</h2>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="./images/abrikos.jpg" alt="Товар 1">
+                    <h3>Абрикосовое варенье</h3>
+                    <p>Прекрасное варенье из свежих абрикосов</p>
+                    <button class="buy-button" onclick="location.href='#slide4'">КУПИТЬ</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/persik.jpg" alt="Товар 1">
+                    <h3>Персиковое варенье</h3>
+                    <p>Прекрасное варенье из сочных персиков</p>
+                    <button class="buy-button" onclick="location.href='#slide4'">КУПИТЬ</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/brusnika.jpg" alt="Товар 1">
+                    <h3>Брусничное варенье</h3>
+                    <p>Варенье из брусники с неповторимым вкусом</p>
+                    <button class="buy-button" onclick="location.href='#slide4'">КУПИТЬ</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/chernika.jpg" alt="Товар 1">
+                    <h3>Черничное варенье</h3>
+                    <p>Отменное варенье из свежей черники</p>
+                    <button class="buy-button" onclick="location.href='#slide4'">КУПИТЬ</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/klubnika.jpg" alt="Товар 1">
+                    <h3>Клубничное варенье</h3>
+                    <p>Бесподобное варенье из сочной клубники</p>
+                    <button class="buy-button" onclick="location.href='#slide4'">КУПИТЬ</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/cheresh.jpg" alt="Товар 1">
+                    <h3>Черешневое варенье</h3>
+                    <p>Восхитительное варенье из черешни</p>
+                    <button class="buy-button" onclick="location.href='#slide4'">КУПИТЬ</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/vish.jpg" alt="Товар 1">
+                    <h3>Вишнёвое варенье</h3>
+                    <p>Вкуснейшее варенье из спелой вишни</p>
+                    <button class="buy-button" onclick="location.href='#slide4'">КУПИТЬ</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/zemlyanika.jpg" alt="Товар 1">
+                    <h3>Земляничное варенье</h3>
+                    <p>Превосходное варенье из свежей лесной земляники</p>
+                    <button class="buy-button" onclick="location.href='#slide4'">КУПИТЬ</button>
+                </div>
+            </div>
+        <a href="#slide1" class="top-button"></a>
+    </section>
+  
+    <section id="slide4" class="slide">
+        <h2 class="title">Форма заказа</h2>
+        <form class="order-form">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="tel" placeholder="Телефон для связи" required>
+            <textarea placeholder="Ваш заказ" rows="4" required></textarea>
+            <button type="submit">ОТПРАВИТЬ</button>
+        </form>
+        <a href="#slide1" class="top-button"></a>
+    </section>
+
+    <section id="slide5" class="slide">
+        <div class="contacts">
+            <h2 class="title">Контакты</h2>
+            <p class="text">Адрес: г. Тюмень, ул. Красных Зорь, дом 55</p>
+            <p class="text">Телефон: +7 (999) 987-65-43</p>
+            <div id="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afe878a3e0db469b6e53bdc60d0f0670cf4be8a1acdd68f57311e56160d56ad96&amp;width=350&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>        </div>
+            </div>
+            <a href="#slide1" class="top-button"></a>
+    </section>
+
+    <footer>
+        <p>Вишнёвый сад. &copy; 2025. Все права защищены.</p>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="scripts.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>
