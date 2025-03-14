@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         });
     
-        // Плавная прокрутка наверх
-        const topButtons = document.querySelectorAll('.top-button');
+    // Плавная прокрутка наверх
+    const topButtons = document.querySelectorAll('.top-button');
         topButtons.forEach(button => {
             button.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -50,4 +50,13 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     
+    // Плавная прокрутка для всех ссылок с якорями
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
     });
+});
